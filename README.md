@@ -41,7 +41,7 @@ Cloner le projet :
 
 Bash
 
-git clone https://github.com/xyberclan/xyberscan.git
+git clone https://github.com/CYBERCLAN237/XYBERSCAN.git
 cd xyberscan
 Installer les dépendances :
 
