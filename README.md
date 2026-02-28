@@ -3,6 +3,7 @@
 
 Rendre le numérique plus sûr pour les PME africaines. Un projet de la communauté Open Source Xyberclan.
 
+![XyberScan Logo](assets/3.png)
 
 📖 Présentation du Projet
 La majorité des petites et moyennes entreprises en Afrique ne disposent pas des ressources pour auditer la sécurité de leurs sites web. XYBERSCAN est un outil gratuit, en français et adapté au contexte local, conçu pour combler ce manque.
