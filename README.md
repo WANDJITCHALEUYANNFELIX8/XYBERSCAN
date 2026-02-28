@@ -7,7 +7,8 @@ Rendre le numérique plus sûr pour les PME africaines. Un projet de la communau
   <img src="assets/3.png" alt="XyberScan Logo" width="300"/>
 </p>
 
-📖 Présentation du Projet
+*📖 Présentation du Projet*
+
 La majorité des petites et moyennes entreprises en Afrique ne disposent pas des ressources pour auditer la sécurité de leurs sites web. XYBERSCAN est un outil gratuit, en français et adapté au contexte local, conçu pour combler ce manque.
 
 
@@ -45,7 +46,9 @@ Cloner le projet :
 Bash
 
 git clone https://github.com/CYBERCLAN237/XYBERSCAN.git
-cd xyberscan
+
+<br>cd xyberscan
+
 Installer les dépendances :
 
 Bash
