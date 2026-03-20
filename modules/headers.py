@@ -3,13 +3,13 @@ import json
 from urllib.parse import urlparse#permettra l extraction du nom de domaine de l URL pour le test de HTTP
 
 
-url=input("Entrez l' url du site en question: ").strip()
-
-if not url.startswith(("http://", "https://")):
-	url = "https://" + url
 
 def analyze_headers(url):
-	
+
+	# Ajout automatique du schéma HTTPS si absent
+	if not url.startswith(("http://", "https://")):
+		url = "https://" + url
+		
 	results = {
 		"initial_url": url,
 		"final_url": None,
@@ -66,7 +66,7 @@ def analyze_headers(url):
 		#requete pour faire au serveur que ta requte provient d un vrai navigateur car plusieurs sites bloquent les scanners et donc on pourra avoir des faux headers
 		
 		headers_config = {
-			"User-Agent": "Mozilla/5.0" "AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
+			"User-Agent": "Mozilla/5.0 AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
 		}
 		
 		
@@ -146,12 +146,5 @@ def analyze_headers(url):
 	except Exception as e:
 		return {"error": str(e)}	
 		
-#execution		
-output = analyze_headers(url)	
-
-
-#resultat en json 	
-print("\n================== Résultat JSON ====================\n")
-print(json.dumps(output, indent=4))		
 
 
