@@ -68,3 +68,4 @@ def check_ssl(url):
         results["errors"].append(f"Erreur : {str(e)}")
     
     return results
+
